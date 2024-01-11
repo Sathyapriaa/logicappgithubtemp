@@ -61,7 +61,7 @@ jobs:
         
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
-      id: fa
+      id: la
       with:
         app-name: ${{github.event.inputs.LogicAppName}}
         package: '${{ github.run_id }}.zip'
